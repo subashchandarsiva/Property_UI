@@ -42,6 +42,7 @@ const CreateHome = ({ addedHome }) => {
           <Form.Control
             type="text"
             placeholder="Full name"
+            value={name}
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -53,6 +54,7 @@ const CreateHome = ({ addedHome }) => {
           <Form.Control
             type="email"
             placeholder="Enter email"
+            value={contact}
             onChange={(e) => {
               setContact(e.target.value);
             }}
@@ -67,6 +69,7 @@ const CreateHome = ({ addedHome }) => {
           <Form.Control
             type="text"
             placeholder="Location"
+            value={location}
             onChange={(e) => {
               setLocation(e.target.value);
             }}
